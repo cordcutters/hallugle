@@ -160,7 +160,7 @@ Description: (.+)`)
 		return c.SendString(compileCodeblocks(genWebPage(Search{Name: name, Description: description})))
 	})
 
-	app.Static("/", "/data/served", fiber.Static{
+	app.Static("/", "/data/served/", fiber.Static{
 		Compress:      true,
 		CacheDuration: 4 * time.Hour,
 		MaxAge:        4 * 60 * 60, // 4hrs
