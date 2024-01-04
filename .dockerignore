@@ -3,3 +3,4 @@
 **/*.fiber.gz
 **/go.sum
 fly.toml
+.git
