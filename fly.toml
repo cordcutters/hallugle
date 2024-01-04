@@ -25,3 +25,32 @@ primary_region = "ams"
   cpu_kind = "shared"
   cpus = 1
   memory_mb = 256
+
+# help
+[[files]]
+  guest_path = "./served/eis.js"
+  local_path = "/data/served/eis.js"
+
+[[files]]
+  guest_path = "./served/favicon.ico"
+  local_path = "/data/served/favicon.ico"
+
+[[files]]
+  guest_path = "./served/index.html"
+  local_path = "/data/served/index.html"
+
+[[files]]
+  guest_path = "./served/logo.png"
+  local_path = "/data/served/logo.png"
+
+[[files]]
+  guest_path = "./served/script.js"
+  local_path = "/data/served/script.js"
+
+[[files]]
+  guest_path = "./served/searchResults.html"
+  local_path = "/data/served/searchResults.html"
+
+[[files]]
+  guest_path = "./served/searchResults.js"
+  local_path = "/data/served/searchResults.js"
