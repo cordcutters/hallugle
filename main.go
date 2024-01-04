@@ -17,7 +17,6 @@ import (
 
 	"github.com/gofiber/fiber/v2/middleware/compress"
 	"github.com/gofiber/fiber/v2/middleware/helmet"
-	"github.com/gofiber/fiber/v2/middleware/limiter"
 
 	"github.com/gofiber/fiber/v2/middleware/recover"
 
@@ -131,7 +130,7 @@ Description: (.+)`)
 	app.Use(recover.New())
 	app.Use(helmet.New(helmet.Config{CrossOriginEmbedderPolicy: "credentialless", CrossOriginResourcePolicy: "cross-origin"}))
 	app.Use(cors.New())
-	app.Use(limiter.New())
+	//app.Use(limiter.New())
 
 	app.Get("/api/searchResults", func(c *fiber.Ctx) error {
 		prompt := c.Query("prompt")

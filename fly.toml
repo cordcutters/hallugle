@@ -1,0 +1,27 @@
+# fly.toml app configuration file generated for hallugle on 2024-01-05T00:24:05+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "hallugle"
+primary_region = "ams"
+
+[build]
+  builder = "paketobuildpacks/builder:base"
+  buildpacks = ["gcr.io/paketo-buildpacks/go"]
+
+[env]
+  PORT = "4664"
+
+[http_service]
+  internal_port = 4664
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = false
+  min_machines_running = 1
+  processes = ["app"]
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
