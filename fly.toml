@@ -28,29 +28,29 @@ primary_region = "ams"
 
 # help
 [[files]]
-  guest_path = "./served/eis.js"
-  local_path = "/data/served/eis.js"
+  local_path = "./served/eis.js"
+  guest_path = "/data/served/eis.js"
 
 [[files]]
-  guest_path = "./served/favicon.ico"
-  local_path = "/data/served/favicon.ico"
+  local_path = "./served/favicon.ico"
+  guest_path = "/data/served/favicon.ico"
 
 [[files]]
-  guest_path = "./served/index.html"
-  local_path = "/data/served/index.html"
+  local_path = "./served/index.html"
+  guest_path = "/data/served/index.html"
 
 [[files]]
-  guest_path = "./served/logo.png"
-  local_path = "/data/served/logo.png"
+  local_path = "./served/logo.png"
+  guest_path = "/data/served/logo.png"
 
 [[files]]
-  guest_path = "./served/script.js"
-  local_path = "/data/served/script.js"
+  local_path = "./served/script.js"
+  guest_path = "/data/served/script.js"
 
 [[files]]
-  guest_path = "./served/searchResults.html"
-  local_path = "/data/served/searchResults.html"
+  local_path = "./served/searchResults.html"
+  guest_path = "/data/served/searchResults.html"
 
 [[files]]
-  guest_path = "./served/searchResults.js"
-  local_path = "/data/served/searchResults.js"
+  local_path = "./served/searchResults.js"
+  guest_path = "/data/served/searchResults.js"
