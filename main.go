@@ -164,7 +164,6 @@ Description: (.+)`)
 		Compress:      true,
 		CacheDuration: 4 * time.Hour,
 		MaxAge:        4 * 60 * 60, // 4hrs
-		Index:         "index.html",
 	})
 
 	log.Fatal(app.Listen(":4664"))

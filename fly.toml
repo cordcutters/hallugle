@@ -4,7 +4,7 @@
 #
 
 app = "hallugle"
-primary_region = "ams"
+primary_region = "dfw" # gotta go in the us because gemini api is pretty much locked out of eu
 
 [build]
   builder = "paketobuildpacks/builder:base"
