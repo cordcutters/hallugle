@@ -129,6 +129,10 @@ Description: (.+)`)
 	app.Use(earlydata.New())
 	app.Use(recover.New())
 	app.Use(helmet.New(helmet.Config{CrossOriginEmbedderPolicy: "credentialless", CrossOriginResourcePolicy: "cross-origin"}))
+	app.Use(func(c *fiber.Ctx) error {
+		c.Response().Header.Del("X-Frame-Options")
+		return c.Next()
+	})
 	app.Use(cors.New())
 	//app.Use(limiter.New())
 
